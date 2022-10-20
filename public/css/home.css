@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+.header-Home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.homeBackground {
+    display: block;
+    background-color: #F28E1C;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../images/BackGroundHome.svg");
+}
+
+.titulo-Home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imagem-home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sobreBackGround{
+    background-color: #F28E1C;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/BackGroundSobre.svg");
+    display: flex;
+    flex-direction: row;
+    height: 681px;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-Sobre{
+    margin-right: 370px;
+    margin-bottom: 100px;
+}
+
+.texto-Sobre{
+    font-size: 30px;
+    width: 461px;
+    height: 453px;
+    margin-bottom: 100px;
+}
+
+.botão-Sobre{
+    margin: 20px;
+    margin-top: -10px;
+}
+
+
+.envieDiv{
+    background-color: #F28E1C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.avisoForm{
+    position: relative;
+    width: 508px; 
+    height: 61px;
+    margin-left: 25%;
+}
+
+.tituloDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formBackground{
+    padding: 20px;
+    border-radius: 25px;
+    background-position: center;
+    background-color: blue;
+    width: 985px;
+    height: 702px;
+}
+
+::placeholder {
+    text-align: center; 
+ }
+ 
+
+.InputEnvie label {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.InputEnvie input, label {
+    display:block;
+}
+
+.linha-Input1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    justify-content: center;
+    gap: 60px;
+}
+
+.buttonForm{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.BonecosDireita{
+    position: absolute;
+    z-index: 4;
+    right: 268px;
+    margin-top: 127px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;  
+}
+.BonecosEsquerda{
+    position: absolute;
+    z-index: 4;
+    left: 200px;
+    margin-top: 310px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;  
+}
+
+#NomeInput{
+    width: 334px;
+    height: 50px;
+    border-radius: 10px;
+    writing-mode: vertical-lr;
+    padding-left: 10px;
+}
+
+#CidadeInput{
+    width: 334px;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 10px;
+
+}
+
+#TituloInput{
+    width: 474px;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 10px;
+
+}
+
+#HistoriaInput{
+    width: 874px;
+    height: 358px;
+    border-radius: 10px;
+    line-break: normal;
+    writing-mode: vertical-lr;
+    padding-left: 10px;
+
+}

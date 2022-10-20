@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #CF9D00, #E6AE00);
+    font-family: 'Roboto', sans-serif;
+    display: table-cell;
+    vertical-align: middle;
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+}
+html {
+    display: table;
+    margin: auto;
+ }
+
+
+
+
+
+
+
+ /*Input envia história */
+.CopoInput{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background: blueviolet;
+    max-width: 100%;
+}
+
+/*INputs*/
+label {
+    display: flex;
+    justify-content: center;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    scroll-behavior: auto;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    scroll-behavior: auto;
+}
+
+
+
+  
+
+/* Navbar 
+/* Add a black background color to the top navigation */
