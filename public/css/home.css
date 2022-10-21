@@ -186,3 +186,24 @@
     padding-left: 10px;
 
 }
+
+.Bot{
+    display: block;
+    background-color: #F28E1C;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../images/BackGroundBot.svg");
+
+    display: flex;
+    flex-direction: row;
+    height: 681px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bot-Direita{
+    width: 611px;
+    height: 611px;
+    margin-bottom: 150px;
+    margin-left: 100px;
+}

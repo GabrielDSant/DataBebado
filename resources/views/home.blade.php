@@ -121,8 +121,21 @@
 
 </main>
 
-<main>
-    <h1>Conheça o BOT</h1>
+<main class="Bot">
+    <section class="bot-Esquerda">
+        <h3>Conheça o Bot</h3>
+        <h5>DataBeba.Bot</h5>
+
+        <button class="btn btn-success" onclick=" window.open('http://google.com','_blank')">Bot</button>
+
+        <h4> Comandos </h4>
+        <p>!DB ContaUma</p>
+        <p>O bot responde com uma historia selecionada aleatóriamente do Databebado</p>
+        <p>!DB Link</p>
+        <p>O bot envia o link da sua plataforma no chat do servidor</p>
+    </section>
+
+    <img class="bot-Direita" src="{{asset('images/BotRobo.svg')}}">
 </main>
 
 </body>
