@@ -34,6 +34,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: -16px;
 }
 
 .sobreBackGround{
@@ -201,9 +202,54 @@
     justify-content: center;
 }
 
+.bot-Esquerda{
+    margin-bottom: 150px;
+}
 .bot-Direita{
     width: 611px;
     height: 611px;
     margin-bottom: 150px;
     margin-left: 100px;
+}
+
+footer {
+    background-color: #F28E1C;
+}
+
+.infosMinhas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.sociaisMinhas{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;  
+    gap: 450px;
+    text-align: center;
+}
+.sociaisMinhas p {
+    margin-top: 5px;
+}
+
+.sociaisMinhas a {
+    color: #616161;
+    text-decoration: none;
+}
+
+
+.textoFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;  
+    margin-top: 50px;
+}
+
+html {
+    background-color: #F28E1C;
 }

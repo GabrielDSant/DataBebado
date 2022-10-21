@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
     <link rel="stylesheet" href="{{ asset('css/.css') }}">
     <link rel="stylesheet" href="{{ asset('css/.css') }}">
-
 </head>
 
 <main class="homeBackground">
@@ -138,12 +137,37 @@
     <img class="bot-Direita" src="{{asset('images/BotRobo.svg')}}">
 </main>
 
+<script src="{{ asset('js/EnviaHistoria.js') }}"></script>
+
 </body>
 
 <footer>
-    <h1>teste</h1>
-</footer>
+    <section class="infosMinhas">
+        <img src="{{ asset('images/Minhafoto.png')}} ">
+        <h4><b>Desenvolvedor Do Projeto</b></h4>
+        <h5><b>GabrielDSant</b></h5>
+    </section>
 
-<script src="{{ asset('js/EnviaHistoria.js') }}"></script>
+    <section class="sociaisMinhas">
+
+        <a href="https://www.linkedin.com/in/sant-seginfo/" target="_blank">
+        <img src="{{ asset('images/LinkedinLogo.svg')}}">
+        <p><h5>Linkedin</h5></p>
+        </a>
+
+        <a href="https://tryhackme.com/p/trvo" target="_blank">
+        <img src="{{ asset('images/ThmLogo.svg')}}">
+        <p><h5>TryHackMe</h5></p>
+        </a>
+
+        <a href="https://github.com/GabrielDSant" target="_blank">
+        <img src="{{ asset('images/GitLogo.svg')}}">
+        <p><h5>Github</h5></p>
+        </a>  
+    </section>
+
+    <p class="textoFooter"><b>Meu nome é Gabriel 👋 Aluno de segurança da informação 👨‍🎓 Novo no mundo da Segurança 🔐 Gosto de praticar em CTF's 🏳</b></p>
+
+</footer>
 
 </html>
