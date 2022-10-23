@@ -12,9 +12,8 @@
     <link rel="stylesheet" href="{{ asset('css/.css') }}">
 </head>
 
-<main class="homeBackground">
-    <header class="header-Home">
-        <nav>
+<header>
+        <nav class="header-Home">
             <a href="#">
                 <img src="{{ asset('images/DataBebadoFundoPreto.svg') }}" width="245px" height="106.25">
             </a>
@@ -34,9 +33,11 @@
                 <span class="Menu-item">Desenvolvedor do Projeto</span>
             </a>
         </nav>
-    </header>
+</header>
 
 <body>
+
+<main class="homeBackground">
 
     <section class="titulo-Home">
         <center>
@@ -88,8 +89,10 @@
     <div class="formBackground">
         <img class="avisoForm" src="{{asset('images/AvisoForm.svg')}}">
         
-        <form class="InputEnvie">
+        <form class="InputEnvie" action="{{ route('criarHistoria') }}" method="POST">
             
+            @csrf
+
             <section class="linha-Input1">
 
                 <label for="NomeInput">Autor da Peripécia
@@ -111,7 +114,7 @@
             </label>
 
             <div class="buttonForm">
-                <input class="btn btn-warning btn-md" type="button" onclick="ColetaInputs()" value="clickme">
+                <input class="btn btn-warning btn-md" type="submit" value="clickme">
             </div>
 
         </form>

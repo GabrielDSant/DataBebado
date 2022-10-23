@@ -10,15 +10,14 @@ class HistoriaController extends Controller
 {
     public function index(Request $request){
         $InputHistoria = new Historia;
-        $InputHistoria->Nome = $request->Nome;
-        $InputHistoria->Titulo = $request->Titulo;
-        $InputHistoria->TextoHistoria = $request->TextoHistoria;
-        $InputHistoria->Cidade = $request ->Cidade;
+        $InputHistoria->Nome = $request->NomeInput;
+        $InputHistoria->Titulo = $request->TituloInput;
+        $InputHistoria->TextoHistoria = $request->HistoriaInput;
+        $InputHistoria->Cidade = $request ->CidadeInput;
         $InputHistoria->save();
 
-        return response()->json([
-            "message" => "Historia Criada com sucesso!"
-        ], 201);
+        return redirect('/');
+
     }
 
     public function randomHist(){

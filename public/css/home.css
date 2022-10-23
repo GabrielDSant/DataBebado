@@ -5,13 +5,19 @@
     text-decoration: none;
 }
 
+body {
+    background-color: #F28E1C;
+}
 
 
 .header-Home{
+    background-color: #F28E1C;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 150px;
 }
 
 .homeBackground {
@@ -27,6 +33,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin-top: 80px;
 }
 
 .imagem-home {
@@ -73,6 +80,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    background-image: url("../images/BackgroundFull.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 .avisoForm{
@@ -185,7 +196,7 @@
     line-break: normal;
     writing-mode: vertical-lr;
     padding-left: 10px;
-
+    padding-top: 10px;
 }
 
 .Bot{
