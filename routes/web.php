@@ -16,7 +16,7 @@ use \App\Http\Controllers\HistoriaController;
 
 Route::view('/', 'home');
 
-Route::post('/Historia/Enviar', [HistoriaController::class, 'index'])->name('criarHistoria');
+Route::post('/Historia/Enviar', [HistoriaController::class, 'CriaHist'])->name('criarHistoria');
 
 Route::get('/GeraAvalia', [HistoriaController::class, 'randomHist']);
 

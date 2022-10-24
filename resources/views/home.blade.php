@@ -3,6 +3,8 @@
 
 <head>
     <title>DataBebado</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel='icon' type='image/x-icon' href="{{ URL::asset('favicon.ico') }}">
     <meta charset="UTF-8">
@@ -21,15 +23,15 @@
                 <span class="Menu-item">Home</span>
             </a>
 
-            <a href="#">
+            <a href="#Form-Hist">
                 <span class="Menu-item"> Envie Sua Historia</span>
             </a>
 
-            <a href="#">
+            <a href="#Section-Bot">
                 <span class="Menu-item"> Conheça o Bot</span>
             </a>
 
-            <a href="#">
+            <a href="#Section-Eu">
                 <span class="Menu-item">Desenvolvedor do Projeto</span>
             </a>
         </nav>
@@ -53,7 +55,7 @@
 
 </main>
 
-<main class="sobreBackGround">
+<main id="Section-Sobre"class="sobreBackGround">
 
     <section class="imagem-Sobre">
     <img src="{{ asset('images/ImgSobre.svg') }}" width="325px" height="537px">
@@ -71,7 +73,7 @@
     
 </main>
 
-<main class="envieDiv">
+<main id="Form-Hist" class="envieDiv">
     
     <div class="tituloDiv">
         <h5>Envie Sua História</h5>
@@ -87,6 +89,38 @@
 
 
     <div class="formBackground">
+        
+        @if (session('envio'))
+
+        <script type="text/javascript">    
+            window.onload = () => {
+                $('#myModal1').modal('show');
+            }
+        </script>
+
+        @endif
+        
+        <!-- Modal -->
+
+        <div id="myModal1" class="modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Sua História Foi Enviada!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Sua história foi para fase de avaliação.</p>
+                  <p>Se a história não for engraçada ou sei-lá... Você cometeu um crime nela.</p>
+                  <p>A história será recusada e não irá participar do acervo do Bot.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         <img class="avisoForm" src="{{asset('images/AvisoForm.svg')}}">
         
         <form class="InputEnvie" action="{{ route('criarHistoria') }}" method="POST">
@@ -107,6 +141,7 @@
 
             <label for="TituloInput">Uma História Sem Titulo Não É Uma História
             <input type="text" placeholder="Um titulo memoravel" id="TituloInput" name="TituloInput" required/>
+
             </label>
 
             <label for="HistoriaInput">Quanto mais detalhes melhor...
@@ -123,7 +158,7 @@
 
 </main>
 
-<main class="Bot">
+<main id="Section-Bot" class="Bot">
     <section class="bot-Esquerda">
         <h3>Conheça o Bot</h3>
         <h5>DataBeba.Bot</h5>
@@ -145,7 +180,7 @@
 </body>
 
 <footer>
-    <section class="infosMinhas">
+    <section id="Section-Eu" class="infosMinhas">
         <img src="{{ asset('images/Minhafoto.png')}} ">
         <h4><b>Desenvolvedor Do Projeto</b></h4>
         <h5><b>GabrielDSant</b></h5>
