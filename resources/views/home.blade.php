@@ -19,19 +19,19 @@
             <a href="#">
                 <img src="{{ asset('images/DataBebadoFundoPreto.svg') }}" width="245px" height="106.25">
             </a>
-            <a href="#">
+            <a href="#" class="nav-Text">
                 <span class="Menu-item">Home</span>
             </a>
 
-            <a href="#Form-Hist">
+            <a href="#Form-Hist" class="nav-Text">
                 <span class="Menu-item"> Envie Sua Historia</span>
             </a>
 
-            <a href="#Section-Bot">
+            <a href="#Section-Bot" class="nav-Text">
                 <span class="Menu-item"> Conheça o Bot</span>
             </a>
 
-            <a href="#Section-Eu">
+            <a href="#Section-Eu" class="nav-Text">
                 <span class="Menu-item">Desenvolvedor do Projeto</span>
             </a>
         </nav>
@@ -63,12 +63,12 @@
 
     <section class="texto-Sobre">
         <h4>Sobre o Projeto</h4>
-        <span>DataBebado É Um Banco De Dados Que Armazena Historias De Bebedeira Enviadas Pelos Usuários.</span>
+        <span><span style="color: #F28E1C">DataBebado</span> É Um Banco De Dados Que Armazena Historias De Bebedeira Enviadas Pelos Usuários.</span>
         <br>
-        <span>O Objetivo É Desenvolver Um Bot No Discord Capaz De Contar Essas Histórias Pelos Servidores Que Pertencer.</span>
+        <span>O <span style="color: #F28E1C">Objetivo</span> É Desenvolver <span style="color: #394CE2">Um Bot No Discord</span> Capaz De Contar Essas Histórias Pelos Servidores Que Pertencer.</span>
         <br><br>
-        <input class="btn btn-warning btn-lg botão-Sobre" type="button" value="Envie Sua História">
-        <input class="btn btn-warning btn-lg botão-Sobre" type="button" value="Conheça O Bot">
+        <a class="btn btn-warning btn-lg botão-Sobre" type="button" href="#Form-Hist">Envie Sua História</a>
+        <a class="btn btn-warning btn-lg botão-Sobre" type="button" href="#Section-Bot">Conheça O Bot</a>
     </section>
     
 </main>
@@ -89,7 +89,9 @@
 
 
     <div class="formBackground">
-        
+       
+        <!-- Script Pop-up Modal -->
+
         @if (session('envio'))
 
         <script type="text/javascript">    
@@ -124,7 +126,7 @@
         <img class="avisoForm" src="{{asset('images/AvisoForm.svg')}}">
         
         <form class="InputEnvie" action="{{ route('criarHistoria') }}" method="POST">
-            
+
             @csrf
 
             <section class="linha-Input1">
@@ -149,7 +151,7 @@
             </label>
 
             <div class="buttonForm">
-                <input class="btn btn-warning btn-md" type="submit" value="clickme">
+                <input class="btn btn-warning btn-md" type="submit" value="Enviar">
             </div>
 
         </form>

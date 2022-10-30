@@ -1,12 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     background-color: #F28E1C;
+}
+
+.nav-Text{
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 
@@ -29,6 +40,7 @@ body {
 }
 
 .titulo-Home {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -62,6 +74,7 @@ body {
 }
 
 .texto-Sobre{
+    font-family: 'Roboto', sans-serif;
     font-size: 30px;
     width: 461px;
     height: 453px;
@@ -69,6 +82,9 @@ body {
 }
 
 .botão-Sobre{
+    font-family: 'Roboto', sans-serif;
+    background-color: #F28E1C
+    color: black;
     margin: 20px;
     margin-top: -10px;
 }
@@ -87,6 +103,7 @@ body {
 }
 
 .avisoForm{
+    font-family: 'Roboto', sans-serif;
     position: relative;
     width: 508px; 
     height: 61px;
@@ -114,6 +131,7 @@ body {
  
 
 .InputEnvie label {
+    font-family: 'Roboto', sans-serif;
     color: aliceblue;
     display: flex;
     flex-direction: column;
